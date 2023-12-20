@@ -1,0 +1,348 @@
+:root{
+    /*font*/
+    --base-font: 'Inidie Flower', cursive;
+    --font-weight: 200;
+
+    /* font-size  */
+  --font-display: 4.6em;
+  --font-jumbo: 3.8em;
+  --font-xlarge: 3em;
+  --font-large: 2.4em;
+  --font-medium: 1.8em;
+  --font-small: 1.6em;
+  --font-xsmall:1.4em;
+
+    /*color*/
+    --solid:#6f0000;
+    --bg-light-solid: white;
+
+    /* Spacing */
+  --spacing-128: 12.8rem;
+  --spacing-68: 6.8rem;
+  --spacing-36: 3.6rem;
+  --spacing-28: 2.8rem;
+  --spacing-24: 2.4rem;
+  --spacing-20: 2rem;
+  --spacing-16: 1.6rem;
+  --spacing-12: 1.2rem;
+  --spacing-8:0.8rem;
+
+    /*opacity*/
+    --bg-opacity: 0.25;
+
+}
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style the body */
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+/*header*/
+.navbar{
+display: flex;
+align-items: baseline;
+}
+.logo{
+    display: flex;
+    justify-content: left;
+    text-align: center;
+    color: var(--solid);
+    font-family: var(--base-font);
+    font-weight: var(--font-weight);
+    font-size: var(--font-xsmall);
+}
+
+.logo-up{
+    font-size:small;
+}
+
+.middle{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.middle > div{
+    margin: 10px;
+    text-align: center;
+    margin-left: 100px;
+}
+
+.heros-imgs{
+    position: relative;
+}
+
+.hero-img{
+    width: 100%;
+}
+
+.discover{
+    position: absolute;
+    bottom: 250px;
+    right: 20px;
+    background-color: var(--bg-light-solid);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.discover-h{
+    margin-left: 30px;
+    /* font-size: xx-large; */
+    margin-bottom: 1px;
+    /* font-weight: 600; */
+    color: var(--solid);
+    font-family: 'Lato', sans-serif;
+    font-size: 64px;
+font-style: normal;
+font-weight: 600;
+line-height: 68px;
+}
+
+.discover-p{
+    font-size: var(--font-xsmall);
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+
+.discover-btn{
+    background-color: var(--solid);
+    color: var(--bg-light-solid);
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    width: 208px;
+    height: 68px; 
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    border: none;
+}
+
+ 
+.container-middle {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-end;
+}
+.container-h{
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    color: var(--solid);
+}
+.container-p{
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    margin-top: -30px;
+}
+
+
+.range{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+}
+
+.range-img{
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    padding: 10px;
+}
+
+.range-p {
+    text-align: center;
+}
+
+/*cards*/
+.row{
+    display: grid;
+    gap: 5px 10px;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    row-gap: 450px;
+}
+
+
+.card-container{
+    width: 100%;
+    height: 100%;
+    position: relative
+}
+
+.card-div{
+    width: 269px;
+    height: 397px;
+    left: 2px;
+    top: 3px;
+    position: absolute;
+    background: rgba(217, 217, 217, 0.27);
+    border-radius: 14px
+}
+
+.card-img{
+    width: 271px;
+    height: 279px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px
+}
+
+.card-name{
+    left: 19px;
+    top: 295px;
+    position: absolute;
+    color: black;
+    font-size: 27px;
+    font-family: Lato;
+    font-weight: 600;
+    line-height: 27px;
+    word-wrap: break-word    
+}
+
+.card-size{
+    left: 19px;
+    top: 322px;
+    position: absolute;
+    color: black;
+    font-size: 21px;
+    font-family: Lato;
+    font-weight: 500;
+    line-height: 27px;
+    word-wrap: break-word
+}
+
+.card-price{
+    left: 19px;
+    top: 361px;
+    position: absolute;
+    color: #6F0000;
+    font-size: 21px;
+    font-family: Lato;
+    font-weight: 500;
+    line-height: 27px;
+    word-wrap: break-word
+}
+
+.card-promo{
+    width: 80px;
+    height: 39px;
+    left: 191px;
+    top: 0px;
+    position: absolute;
+    background: #6F0000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-top-left-radius: 36px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 36px
+}
+
+.card-promo-p{
+    left: 210px;
+    top: 6px; 
+    position: absolute;
+    color: white;
+    font-size: 21px;
+    font-family: Lato;
+    font-weight: 500;
+    line-height: 27px;
+    word-wrap: break-word
+}
+
+
+/*btn buy me*/
+
+.btn-padre{
+    display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+
+.btn-buy{
+    /* width: 100%; 
+    height: 100%;   */
+    /* position:static; */
+    display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  align-items: center;
+  order: 0;
+  margin-top: -770px;
+}
+
+.btn-container{
+    width: 208px; 
+    height: 68px; 
+    left: 0px; 
+    top: 0px; 
+    /* position:static; */
+    background: #6F0000
+}
+
+.btn-bm{
+    color: white;
+    text-align:center;
+    font-size: 36px; 
+    font-family: Lato; 
+    font-weight: 600; 
+    line-height: 57px; 
+    word-wrap: break-word;
+}
+
+
+
+/*inspiration*/
+
+
+.container-h-i{
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    color: var(--solid); 
+    margin-top: -550px;
+    font-size: xx-large;
+    font-weight: 700;
+    line-height: 27px;
+}
