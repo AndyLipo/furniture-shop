@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/FumiScape/Fumiscape/styleF.css">
+    <title>FurniScape | Carrito</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <p class="logo-up">FurniScape <br>Transform Your Home, Transform Your Life</p>
+            </div>
+            <ul class="middle">
+                <li class="middle-home"><a href="/FumiScape/Fumiscape/index.html">Home</a></li>
+                <li class="middle-shop"><a href="/FumiScape/Fumiscape/pages/Shop.html">Shop</a></li>
+                <li class="middle-about"><a href="">About</a></li>
+                <li class="middle-contact"><a href="">Contact</a></li>
+                
+            </ul>
+            <div class="right-nav">
+                <a href=""><img class="right-lupa" src="/FumiScape/Fumiscape/img/lupa.png" alt="Lupa"></a>
+                <a href="/FumiScape/Fumiscape/pages/Carrito.html"><img class="right-bag" src="/FumiScape/Fumiscape/img/bag.png" alt="Bag"></a>
+                <a href=""><img class="right-user" src="/FumiScape/Fumiscape/img/user.png" alt="User"></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h4>CARRITO DE COMPRAS</h4>
+        </section>
+        <section>
+            <table class="titulo-tabla">
+                <tr>
+                    <th>DETALLE DE PRODUCTO</th>
+                    <th>CANTIDAD</th>
+                    <th>TOTAL</th>
+                </tr>
+            </table>
+            <div>
+                <table class="products">
+                    <tr>
+                        <th>
+                            <div class="row">
+                                <div class="carrito">
+                                    <div class="card">
+                                        <div class="card-container">
+                                            <div class="carrito card-div"></div>
+                                            <img class="carrito card-img" id="img-carrito" src="/FumiScape/Fumiscape/img/double-bed4.jpg" />
+                                            <div class="parrafo">
+                                                <div class="carrito card-price">Rs 7600000/-</div>
+                                                <div class="carrito card-size">6 feet</div>
+                                                <div class="carrito card-name">Double Bed</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="contador">
+                                <p id="contador" class="contador-nro">0</p> <!-- Elemento donde se mostrará el valor del contador -->
+                                <div class="contador-btn">
+                                    <button id="boton-sumar">+</button> <!-- Botón para sumar -->
+                                    <button id="boton-restar">-</button>    
+                                </div>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="carrito total-price">
+                                <p><span id="total">0</span>/-</p>
+                            </div>
+                        </th>
+                    </tr>
+                </table>
+        </section>
+        <section>
+            <div class="comprar"> 
+                <button class="cmpr-btn"> 
+                    Comprar
+            </button>
+        </div>
+        </section>
+    </main>
+    <script src="/FumiScape/Fumiscape/pages/contador.js"></script>
+</body>
+</html>
