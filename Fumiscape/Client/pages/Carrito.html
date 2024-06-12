@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="/FumiScape/Fumiscape/Client/assets/styleF.css">
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
+
+    <title>FurniScape | Carrito</title>
+</head> 
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <p class="logo-up">FurniScape <br>Transform Your Home, Transform Your Life</p>
+            </div>
+            <ul class="middle">
+                <li class="middle-home"><a href="/FumiScape/Fumiscape/Client/index.html">Home</a></li>
+                <li class="middle-shop"><a href="/FumiScape/Fumiscape/Client/pages/Carrito.html">Shop</a></li>
+                <li class="middle-about"><a href="">About</a></li>
+                <li class="middle-contact"><a href="">Contact</a></li>
+                
+            </ul>
+            <div class="right-nav">
+                <a href=""><img class="right-lupa" src="/FumiScape/Fumiscape/Client/img/lupa.png" alt="Lupa"></a>
+                <a href="/FumiScape/Fumiscape/pages/Carrito.html"><img class="right-bag" src="/FumiScape/Fumiscape/Client/img/bag.png" alt="Bag"></a>
+                <a href=""><img class="right-user" src="/FumiScape/Fumiscape/Client/img/user.png" alt="User"></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <table class="titulo-tabla">
+                <tr>
+                    <th>DETALLE DE PRODUCTO</th>
+                    <th>CANTIDAD</th>
+                    <th>TOTAL</th>
+                </tr>
+            </table>
+            <div>
+                <table class="products">
+                    <tr>
+                        <th>
+                            <div class="row">
+                                <div class="carrito">
+                                    <div class="card">
+                                        <div class="card-container">
+                                            <div class="carrito card-div"></div>
+                                            <img class="carrito card-img" id="img-carrito" src="/FumiScape/Fumiscape/Client/img/beddroom.jpg" />
+                                            <div class="parrafo">
+                                                <div class="carrito card-price"> 7600000</div>
+                                                <div class="carrito card-size">6 feet</div>
+                                                <div class="carrito-card-name">Double Bed</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="contador">
+                                <p id="contador" class="contador-nro">0</p> <!-- Elemento donde se mostrará el valor del contador -->
+                                <div class="contador-btn">
+                                    <button id="boton-sumar">+</button> <!-- Botón para sumar -->
+                                    <button id="boton-restar">-</button>    
+                                </div>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="carrito total-price">
+                                <p><span id="total">0</span>/-</p>
+                            </div>
+                        </th>
+                    </tr>
+                </table>
+        </section>
+        <section  class="comprar">
+            <button id="checkout-btn" class="cmpr-btn" >Comprar</button>
+            <div id="wallet_container"></div>  
+        </section>
+        <footer class="footer-container">
+            <section class="footer-logo">
+                <div class="logo">
+                    <div class="logo-furni-f">
+                        <p>FurniScape</p>
+                    </div>
+                    <div class="logo-furni-p"><br>
+                        <p>Transform Your Home, Transform Your Life</p>
+                    </div><br>
+                   <div href="" class="footer-logo-img">
+                        <img src="/FumiScape/Fumiscape/Client/img/facebook.png" alt="">
+                        <img src="/FumiScape/Fumiscape/Client/img/insta.png" alt="">
+                        <img src="/FumiScape/Fumiscape/Client/img/tw.png" alt="">
+                        <img src="/FumiScape/Fumiscape/Client/img/demas.png" alt="">
+                    </div> 
+                </div>
+            </section>
+            <section class="footer-pages-container">
+                <div class="footer-pages">
+                    <p class="pages-home">Home</p>
+                    <p class="pages-decor">Decor</p>
+                    <p class="pages-bed">Bedroom</p>
+                    <p class="pages-shop">Shop</p>
+                    <p class="pages-furn">Furniture</p>
+                    <p class="pages-kit">Kitchen</p>
+                    <p class="pages-abou">About</p>
+                    <p class="pages-rent">Rent</p>
+                    <p class="pages-livi">Living</p>
+                    <p class="pages-cont">Contact</p>
+                    <p class="pages-sale">Sale</p>
+                    <p class="pages-chair">Chairs</p>
+                </div>
+            </section>
+            <section class="footer-searchbar">
+                <div class="footer-search-container">
+                    <h3 class="footer-search-subsc">Subscribe our Newsletter</h3>
+                <div class="search-container">
+                    <form class="footer-search-form" for="">
+                        <input class="footer-search-input" type="text" placeholder="Email">
+                        <button class="footer-search-button" type="submit">Subscribe</button>
+                    </form>
+                </div>
+                </div>
+            </section>
+        </footer>
+    </main>
+    
+    <script src="contador.js"></script>
+    <script type="module" src="/FumiScape/Fumiscape/Client/pages/Pasarela.js"></script>
+
+ 
+</html>
